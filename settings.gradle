@@ -16,3 +16,4 @@ rootProject.name = "DepartmentExercise"
 include ':app'
 include ':viewexercise'
 include ':ipcexercise'
+include ':frameworkexercise'
