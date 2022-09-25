@@ -10,6 +10,9 @@ public class ViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
+
+        ChargeView chargeView = findViewById(R.id.charge_view);
+        chargeView.update(true, true);
     }
 
 }

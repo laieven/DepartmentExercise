@@ -1,18 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--ViewGroup-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewActivity">
+    android:background="#DD000000"
+    android:orientation="vertical">
 
-    <TextView
+    <!--这里是全包名-->
+    <!--由于代码中，默认颜色是红色，所以这里对fast变为白色-->
+    <com.lbj.viewexercise.ChargeView
+        android:id="@+id/charge_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:charge_fast_bg_color="@color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--自定义光柱图-->
+    <com.lbj.viewexercise.EasyTmcBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:tmc_amble_color="@color/traffic_status_amble"
+        app:tmc_car_drawable="@mipmap/icon_tmc_v_car"
+        app:tmc_jam_color="@color/traffic_status_jam"
+        app:tmc_passed_color="@color/traffic_status_passed_color"
+        app:tmc_unblocked_color="@color/traffic_status_unblocked"
+        app:tmc_width="20dp" />
+</LinearLayout>

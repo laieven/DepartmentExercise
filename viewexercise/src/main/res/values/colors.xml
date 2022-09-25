@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="traffic_status_unblocked">#29A66A</color>
+    <color name="traffic_status_amble">#E6A100</color>
+    <color name="traffic_status_jam">#CB3838</color>
+    <color name="traffic_status_passed_color">#B5BFD7</color>
 </resources>
